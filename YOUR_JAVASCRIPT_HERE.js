@@ -101,7 +101,7 @@ function creatediv(hobject)
     paragraph3.innerHTML = `WeaponType : ${hobject.weapon.type}`;
     paragraph4.innerHTML = `Weapon Damage: ${hobject.weapon.damage}`;
     div.className = "display"
-    section = document.getElementById("displayStats");
+    section = document.getElementById("displayStats") ;
     div.append(paragraph1);
     div.append(paragraph2);
     div.append(paragraph3);
@@ -109,6 +109,7 @@ function creatediv(hobject)
     div.append(hr);
     section.append(div);
 }
+
 
 function whenEnteredAName(val,inputfield)
 {
