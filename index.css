@@ -1,0 +1,24 @@
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container{
+    display:flex;
+} 
+
+.img1 { 
+    flex: 1.3344; 
+    border: 2px solid black;
+}
+
+.img2 { 
+    flex: 1.3345; 
+    border: 2px solid black;
+}
+
+.img3 { 
+    flex: 1.3345; 
+    border:2px solid black;
+}
