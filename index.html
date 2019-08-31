@@ -26,66 +26,52 @@
   </div>
     
   <br>
-  <br>
   <hr />
-  
   <br>
-  <button onclick="displayStats()"  id="disp-button">Display Status</button>
+  
+  <button onclick="fight()"  id="fight-button">Fight</button>
+  <br>
+ 
+  <section id="fight"></section>
+
+  <section id="finalwinner"></section>
+
+   
+  <div class="shooting-container">
+    <div class="img1">
+        <img src="https://vignette.wikia.nocookie.net/johnnybravo/images/b/bb/Johnnyb001.gif/revision/latest?cb=20190421193227" id="img1" onclick="callrest()">
+    </div>
+  
+    <div class="img2">
+        <img src="https://opgg-pubg-static.akamaized.net/assets/assets/item/weapon/handgun/item_weapon_nagantm1895_c.png?image=w_500%2Ce_trim%2Fe_outline%3Aouter%3A8%3A0%2Fe_outline%3Aouter%3A3%3A1000%2Cco_rgb%3A00000080%2Fw_500%2Ch_500%2Cc_pad&v=1" id="img2" onclick="callpickup()">
+    </div>
+  
+    <div class="img3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpMMcvoVC_wD9pKiV2qKtGLrY-EnUtYosQdkiuz9IiiwGqzHedA" id="img3" onclick="callequipWeapon()">
+    </div>
+  
+  </div>
+
+  <br>
+  <button onclick="shoot()" id="shoot">Shoot</button>
 
   <br>
   <br>
 
   <form id="form1">
-     Name : <br>
-     <input type="text" name="name" id="name">
-   </form>
-
-  <button onclick="displayStats()"  id="disp-button">Update Status</button>
-     
-   <br>
-   <br>
-
-   <section id="displayStats">
-      
-   </section>
-
-   <br>
-   <br>
-   <button onclick="fight()"  id="fight-button">Fight</button>
-   <br>
-   <br>
-   <br>
-
-   <section id="fight">
-
-     
-   </section>
-
-   <section id="finalwinner">
-
-   </section>
-
-   
-   <div class="shooting-container">
-      <div class="img1">
-          <img src="https://vignette.wikia.nocookie.net/johnnybravo/images/b/bb/Johnnyb001.gif/revision/latest?cb=20190421193227" id="img1" onclick="callrest()">
-      </div>
-  
-      <div class="img2">
-          <img src="https://opgg-pubg-static.akamaized.net/assets/assets/item/weapon/handgun/item_weapon_nagantm1895_c.png?image=w_500%2Ce_trim%2Fe_outline%3Aouter%3A8%3A0%2Fe_outline%3Aouter%3A3%3A1000%2Cco_rgb%3A00000080%2Fw_500%2Ch_500%2Cc_pad&v=1" id="img2" onclick="callpickup()">
-      </div>
-  
-      <div class="img3">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpMMcvoVC_wD9pKiV2qKtGLrY-EnUtYosQdkiuz9IiiwGqzHedA" id="img3" onclick="callequipWeapon()">
-      </div>
-  
-    </div>
-
+    <label name="label-name">Name : *</label>
     <br>
-    <button onclick="shoot()" id="shoot">Shoot</button>
-
-    <br>
-    <br>
+    <input type="text" name="name" id="name" required>
+  </form>
+  
+  <button onclick="displayStats()"  id="disp-button">Display Status</button>
+  
+  <br>
+  <br>
+ 
+  <section id="displayStats"></section>
+  
+  <br>
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();" id="runtest">Run the tests!</button>
 
